@@ -21,7 +21,7 @@ export const Header = ({ className }: HeaderProps) => {
   return (
     <header className={`bg-background/95 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50 ${className}`}>
       <div className="container mx-auto px-3 sm:px-4 lg:px-8">
-        <div className="flex items-center justify-between h-14 sm:h-16">
+        <div className="flex items-center justify-between h-16 sm:h-18 lg:h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2 sm:space-x-3">
             <div className="relative w-8 h-8 sm:w-10 sm:h-10">
@@ -82,14 +82,14 @@ export const Header = ({ className }: HeaderProps) => {
             <Button 
               variant="ghost" 
               size="sm" 
-              className="font-lexend font-medium rounded-full px-4 xl:px-6 hover:bg-gray-100 transition-all duration-200"
+              className="font-lexend font-medium rounded-full px-4  py-6 xl:px-6 hover:bg-gray-100 transition-all duration-200"
             >
               Sign In
             </Button>
             <Button 
               variant="default" 
               size="sm" 
-              className="font-lexend font-medium rounded-full px-6 xl:px-8 py-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all duration-200"
+              className="font-lexend font-medium rounded-full px-6 xl:px-8 py-6 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all duration-200"
             >
               Get Started
             </Button>
