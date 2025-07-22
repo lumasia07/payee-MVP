@@ -9,7 +9,7 @@ interface HeroProps {
 export const Hero = ({ className }: HeroProps) => {
   return (
     <section className={`relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20 ${className}`}>
-      <div className="container mx-auto px-3 sm:px-4 lg:px-8 py-12 sm:py-16 lg:py-24 xl:py-32">
+      <div className="container mx-auto px-0 sm:px-4 lg:px-8 py-12 sm:py-16 lg:py-24 xl:py-32">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
