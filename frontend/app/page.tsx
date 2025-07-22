@@ -1,23 +1,19 @@
-// src/app/page.tsx
-"use client";
+import { Header } from "./home_components/Header";
+import { Hero } from "./home_components/Hero";
+import { Features } from "./home_components/Features";
+import { HowItWorks } from "./home_components/HowItWorks";
+import { Footer } from "./home_components/Footer";
 
-import { gql, useQuery } from "@apollo/client";
-
-const HELLO_QUERY = gql`
-  query {
-    hello
-  }
-`;
-
-export default function HomePage() {
-  const { data, loading, error } = useQuery(HELLO_QUERY);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
-
+export default function Home() {
   return (
-    <main className="flex items-center justify-center h-screen">
-      <h1 className="text-2xl font-bold">API says: {data.hello}</h1>
-    </main>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <HowItWorks />
+      </main>
+      <Footer />
+    </div>
   );
 }

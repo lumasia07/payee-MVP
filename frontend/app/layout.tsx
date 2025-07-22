@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Providers } from "./providers";
 import "./globals.css";
-import { Lexend } from "next/font/google";
+import {Lexend} from "next/font/google";
 
 
 const lexend = Lexend({
